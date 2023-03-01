@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <title>Портфоліо</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="header__container header-container">
+                <div class="header-container__body">
+                    <a class="header-container__logo" href="./index.html">Web<span>Studio</span></a>
+                    <div class="header-container__content">
+                        <nav class="header-container__menu header-menu">
+                            <ul class="header-menu__list menu-list">
+                                <li class="menu-list__item"><a class="menu-list-item__link "
+                                        href="./index.html">Студія</a></li>
+                                <li class="menu-list__item"><a class="menu-list-item__link current"
+                                        href="./portfolio.html">Портфоліо</a></li>
+                                <li class="menu-list__item"><a class="menu-list-item__link menu-list-item__link-contacts"
+                                        href="#modal-window">Контакти</a></li>
+                            </ul>
+                        </nav>
+                        <div class="header-container__contacts header-contacts">
+                            <div class="header-contacts__items-1">
+                                <a class="header-contacts__item" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                            </div>
+                            <div class="header-contacts__items-2">
+                                <a class="header-contacts__item" href="tel:+380961111111">+380961111111</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-container__burger header-burger">
+                        <div class="burger__icon">
+                            <span></span>
+                        </div>
+                        <div class="header-burger__content">
+                            <a class="header-burger__close-icon" href="#"></a>
+                            <div class="menu-list__burger menu-list-burger">
+                                <a href="./index.html" class="menu-list-burger-link ">Студія</a>
+                                <a href="./portfolio.html" class="menu-list-burger-link hover">Портфоліо</a>
+                                <a href="#modal-window"
+                                    class="menu-list-burger-link menu-list-item__link-contacts">Контакти</a>
+                            </div>
+                            <div class="menu-list__burger-contacts burger-contacts">
+                                <a class="burger-contacts__item-tel" href="tel:+380961111111">+380961111111</a>
+                                <a class="burger-contacts__item-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                            </div>
+                            <div class="menu-list-burger__social burger__social">
+                                <a href="#" class="burger__social-link">Instagram</a>
+                                <a href="#" class="burger__social-link">Twitter</a>
+                                <a href="#" class="burger__social-link">Facebook</a>
+                                <a href="#" class="burger__social-link">LinkedIn</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+            <main>
+                <section id="modal-window" class="modal-window widow-modal">
+                        <div class="widow-modal__body">
+                                    <div class="widow-modal__content modal-content">
+                                        <a href="#" class="widow-modal__close-link"></a>
+                                        <h3 class="modal-content__title">Залиште свої дані, ми вам передзвонимо</h3>
+                                        <form action="#" class="modal-content__form modal-content-form">
+                                            <div class="modal-content-form__items">
+                                                <label for="input-name" class="modal-content-form__label">Ім'я</label>
+                                                <input id="input-name" autocomplete="off" type="text"
+                                                    class="modal-content-form__input modal-content-form__input-name">
+                                            </div>
+                                            <div class="modal-content-form__items">
+                                                <label for="input-tel" class="modal-content-form__label">Телефон</label>
+                                                <input id="input-tel" autocomplete="off" type="text"
+                                                    class="modal-content-form__input modal-content-form__input-tel">
+                                            </div>
+                                            <div class="modal-content-form__items">
+                                                <label for="input-mail" class="modal-content-form__label">Пошта</label>
+                                                <input id="input-mail" autocomplete="off" type="text"
+                                                    class="modal-content-form__input modal-content-form__input-mail">
+                                            </div>
+                                            <div class="modal-content-form__items modal-content-form__comment-body">
+                                                <label for="input-comment" class="modal-content-form__label">Коментар</label>
+                                                <textarea id="input-comment" autocomplete="off" type="text" class="modal-content-form__comment"
+                                                    placeholder="Введіть текст"></textarea>
+                                            </div>
+                                            <div class="modal-content-form__items modal-content-form__check">
+                                                <input id="input-check" autocomplete="off" type="checkbox" class="modal-content-form__check">
+                                                <label for="input-check" class="modal-content-form__label-check">Погоджуюся з розсилкою та приймаю
+                                                    <a href="#">Умови договору</a></label>
+                                            </div>
+                                        </form>
+                                        <buttton type="submit" class="widow-modal__buttton">Відправити</buttton>
+                                    </div>
+                                </div>
+                            </section>
+                <section class="section__page page-section">
+                    <div class="page-section__container ">
+                        <div class="page-section__content">
+                            <h1 class="visually-hidden">Портфоліо</h1>
+                            <nav class="page-section-content__menu  content-menu">
+                                <button type="button" data-work-type="" class="content-menu__button active">Усі</button>
+                                <button type="button" data-work-type="sites" class="content-menu__button">Веб-сайти</button>
+                                <button type="button" data-work-type="apps" class="content-menu__button">Додатки</button>
+                                <button type="button" data-work-type="design" class="content-menu__button">Дизайн</button>
+                                <button type="button" data-work-type="marketing" class="content-menu__button">Маркетинг</button>
+                            </nav>
+                            <div class="page-content-list__list page-content-list">
+                                <div class="page-content-list__item content-list-item" data-work-type="sites">
+                                    <a class="content-list-item__link" href="#">
+                                        <div class="content-list-item__img-block">
+                                            <p class="content-list-item__text-hover">Ресурс пропонує комплексні пропозиції з різним рівнем
+                                                функціоналу та сервісів.
+                                                Все це дозволить відвідувачу отримати
+                                                вичерпні відомості про компанію чи приватну особу.
+                                            </p>
+                                            <img class="content-list-item__img" width="370" height="294" src="./images/portfolio/techonokrak.jpg"
+                                                alt="ноутбук з командою">
+                                        </div>
+                                        <h3 class="content-list-item__title" lang="en">Технокряк</h3>
+                                        <p class="content-list-item__text">Веб-сайт</p>
+                                    </a>
+                                </div>
+                                <div class="page-content-list__item content-list-item" data-work-type="design">
+                                    <a class="content-list-item__link" href="#">
+                                        <div class="content-list-item__img-block">
+                                            <p class="content-list-item__text-hover">Ресурс пропонує комплексні пропозиції з різним рівнем
+                                                функціоналу та сервісів.
+                                                Все це дозволить відвідувачу отримати
+                                                вичерпні відомості про компанію чи приватну особу.
+                                            </p>
+                                            <img class="content-list-item__img" width="370" height="294" src="./images/portfolio/posternogs.jpg"
+                                                alt="два баскетболісти">
+                                        </div>
+                                        <h3 class="content-list-item__title" lang="en">Постер New Orlean vs Golden Star</h3>
+                                        <p class="content-list-item__text">Дизайн</p>
+                                    </a>
+                                </div>
+                                <div class="page-content-list__item content-list-item" data-work-type="apps">
+                                    <a class="content-list-item__link" href="#">
+                                        <div class="content-list-item__img-block">
+                                            <p class="content-list-item__text-hover">Ресурс пропонує комплексні пропозиції з різним рівнем
+                                                функціоналу та сервісів.
+                                                Все це дозволить відвідувачу отримати
+                                                вичерпні відомості про компанію чи приватну особу.
+                                            </p>
+                                            <img class="content-list-item__img" width="370" height="294" src="./images/portfolio/restseafood.jpg"
+                                                alt="логотип ресторану">
+                                        </div>
+                                        <h3 class="content-list-item__title" lang="en">Ресторан Seafood</h3>
+                                        <p class="content-list-item__text">Додаток</p>
+                                    </a>
+                                </div>
+                                <div class="page-content-list__item content-list-item" data-work-type="marketing">
+                                    <a class="content-list-item__link" href="#">
+                                        <div class="content-list-item__img-block">
+                                            <p class="content-list-item__text-hover">Ресурс пропонує комплексні пропозиції з різним рівнем
+                                                функціоналу та сервісів.
+                                                Все це дозволить відвідувачу отримати
+                                                вичерпні відомості про компанію чи приватну особу.
+                                            </p>
+                                            <img class="content-list-item__img" width="370" height="294" src="./images/portfolio/projectprime.jpg"
+                                                alt="навушники">
+                                        </div>
+                                        <h3 class="content-list-item__title" lang="en">Проєкт Prime</h3>
+                                        <p class="content-list-item__text">Маркетинг</p>
+                                    </a>
+                                </div>
+                                <div class="page-content-list__item content-list-item" data-work-type="apps">
+                                    <a class="content-list-item__link" href="#">
+                                        <div class="content-list-item__img-block">
+                                            <p class="content-list-item__text-hover">Ресурс пропонує комплексні пропозиції з різним рівнем
+                                                функціоналу та сервісів.
+                                                Все це дозволить відвідувачу отримати
+                                                вичерпні відомості про компанію чи приватну особу.
+                                            </p>
+                                            <img class="content-list-item__img" width="370" height="294" src="./images/portfolio/projectbox.jpg"
+                                                alt="коробки">
+                                        </div>
+                                        <h3 class="content-list-item__title" lang="en">Проєкт Boxes</h3>
+                                        <p class="content-list-item__text">Додаток</p>
+                                    </a>
+                                </div>
+                                <div class="page-content-list__item content-list-item" data-work-type="sites">
+                                    <a class="content-list-item__link" href="#">
+                                        <div class="content-list-item__img-block">
+                                            <p class="content-list-item__text-hover">Ресурс пропонує комплексні пропозиції з різним рівнем
+                                                функціоналу та сервісів.
+                                                Все це дозволить відвідувачу отримати
+                                                вичерпні відомості про компанію чи приватну особу.
+                                            </p>
+                                            <img class="content-list-item__img" width="370" height="294" src="./images/portfolio/inspinoborders.jpg"
+                                                alt="монітор">
+                                        </div>
+                                        <h3 class="content-list-item__title" lang="en">Inspiration has no Borders</h3>
+                                        <p class="content-list-item__text">Веб-сайт</p>
+                                    </a>
+                                </div>
+                                <div class="page-content-list__item content-list-item" data-work-type="design">
+                                    <a class="content-list-item__link" href="#">
+                                        <div class="content-list-item__img-block">
+                                            <p class="content-list-item__text-hover">Ресурс пропонує комплексні пропозиції з різним рівнем
+                                                функціоналу та
+                                                сервісів.
+                                                Все це дозволить відвідувачу отримати
+                                                вичерпні відомості про компанію чи приватну особу.
+                                            </p>
+                                            <img class="content-list-item__img" width="370" height="294"
+                                                src="./images/portfolio/booklimitedition.jpg" alt="книжка limited edition">
+                                        </div>
+                                        <h3 class="content-list-item__title" lang="en">Видання Limited Edition</h3>
+                                        <p class="content-list-item__text">Дизайн</p>
+                                    </a>
+                                </div>
+                                <div class="page-content-list__item content-list-item" data-work-type="marketing">
+                                    <a class="content-list-item__link" href="#" work-type="marketing">
+                                        <div class="content-list-item__img-block">
+                                            <p class="content-list-item__text-hover">Ресурс пропонує комплексні пропозиції з різним рівнем
+                                                функціоналу та
+                                                сервісів.
+                                                Все це дозволить відвідувачу отримати
+                                                вичерпні відомості про компанію чи приватну особу.
+                                            </p>
+                                            <img class="content-list-item__img" width="370" height="294" src="./images/portfolio/projectlab.jpg"
+                                                alt="брелок з логотипом">
+                                        </div>
+                                        <h3 class="content-list-item__title" lang="en">Проєкт LAB</h3>
+                                        <p class="content-list-item__text">Маркетинг</p>
+                                    </a>
+                                </div>
+                                <div class="page-content-list__item content-list-item" data-work-type="apps">
+                                    <a class="content-list-item__link" href="#">
+                                        <div class="content-list-item__img-block">
+                                            <p class="content-list-item__text-hover">Ресурс пропонує комплексні пропозиції з різним рівнем
+                                                функціоналу та
+                                                сервісів.
+                                                Все це дозволить відвідувачу отримати
+                                                вичерпні відомості про компанію чи приватну особу.
+                                            </p>
+                                            <img class="content-list-item__img" width="370" height="294" src="./images/portfolio/glowingbuss.jpg"
+                                                alt="ноутбук з проектами">
+                                        </div>
+                                        <h3 class="content-list-item__title" lang="en">Growing Business</h3>
+                                        <p class="content-list-item__text">Додаток</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        <footer>
+            <div class="footer__container">
+                <div class="footer__content content-footer">
+                    <div class="content-footer-body">
+                        <div class="content-footer__item-nav">
+                            <a class="content-footer__logo" href="#">Web<span>Studio</span></a>
+                            <address class="content-footer__address">
+                                <ul class="content-footer-address__items">
+                                    <li class="content-footer-address__item"><a class="content-footer-address-item__map"
+                                            href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank"
+                                            rel="noopener noreferrer">м. Київ, пр-т
+                                            Лесі Українки, 26</a></li>
+                                    <li class="content-footer-address__item"><a class="content-footer-address-item__contacts"
+                                            href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                                    <li class="content-footer-address__item"><a class="content-footer-address-item__contacts"
+                                            href="tel:+380961111111">+380961111111</a></li>
+                                </ul>
+                            </address>
+                        </div>
+                        <div class="content-footer__item-social footer-item-social">
+                            <h4 class="footer-item-social__title">приєднуйтесь</h4>
+                            <div class="footer-item-social__items">
+                                <a href="#" class="footer-item-social__links footer-item-social__link-1"></a>
+                                <a href="#" class="footer-item-social__links footer-item-social__link-2"></a>
+                                <a href="#" class="footer-item-social__links footer-item-social__link-3"></a>
+                                <a href="#" class="footer-item-social__links footer-item-social__link-4"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-footer__item-form footer-item-form">
+                        <h4 class="footer-item-form__title">Підпишіться на розсилку</h4>
+                        <div class="footer-item-form__send-block">
+                            <input type="text" autocomplete="off" class="footer-item-form__input" placeholder="E-mail">
+                            <a href="#" class="footer-item-form__link">Підписатися</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/portfolio-sort.js"></script>
+    <script src="js/portfolio-modal-window.js"></script>
+    <script src="js/header-modal.js"></script>
+</body>
+</html>

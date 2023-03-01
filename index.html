@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <title>WebStudio</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="header__container header-container">
+                <div class="header-container__body">
+                    <a class="header-container__logo" href="./index.html">Web<span>Studio</span></a>
+                    <div class="header-container__content">
+                        <nav class="header-container__menu header-menu">
+                            <ul class="header-menu__list menu-list">
+                                <li class="menu-list__item"><a class="menu-list-item__link current" href="./index.html">Студія</a></li>
+                                <li class="menu-list__item"><a class="menu-list-item__link" href="./portfolio.html">Портфоліо</a></li>
+                                <li class="menu-list__item"><a class="menu-list-item__link menu-list-item__link-contacts" href="#modal-window">Контакти</a></li>
+                            </ul>
+                        </nav>
+                        <div class="header-container__contacts header-contacts">
+                            <div class="header-contacts__items-1">
+                                <a class="header-contacts__item" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                            </div>
+                            <div class="header-contacts__items-2">
+                                <a class="header-contacts__item" href="tel:+380961111111">+380961111111</a>
+                            </div>
+                        </div>
+                        </div>
+                <div class="header-container__burger header-burger">
+                    <div class="burger__icon">
+                        <span></span>
+                    </div>
+                    <div class="header-burger__content">
+                        <a class="header-burger__close-icon"  href="#"></a>
+                        <div class="menu-list__burger menu-list-burger">
+                            <a href="./index.html" class="menu-list-burger-link hover">Студія</a>
+                            <a href="./portfolio.html" class="menu-list-burger-link">Портфоліо</a>
+                            <a href="#modal-window" class="menu-list-burger-link menu-list-burger-link-contacts">Контакти</a>
+                        </div>
+                        <div class="menu-list__burger-contacts burger-contacts">
+                            <a class="burger-contacts__item-tel" href="tel:+380961111111">+380961111111</a>
+                            <a class="burger-contacts__item-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </div>
+                        <div class="menu-list-burger__social burger__social">
+                            <a href="#" class="burger__social-link">Instagram</a>
+                            <a href="#" class="burger__social-link">Twitter</a>
+                            <a href="#" class="burger__social-link">Facebook</a>
+                            <a href="#" class="burger__social-link">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section id="modal-window" class="modal-window widow-modal">
+                <div class="widow-modal__body">
+                    <div class="widow-modal__content modal-content">
+                        <a href="#" class="widow-modal__close-link"></a>
+                        <h3 class="modal-content__title">Залиште свої дані, ми вам передзвонимо</h3>
+                        <form action="#" class="modal-content__form modal-content-form">
+                            <div class="modal-content-form__items">
+                                <label for="input-name" class="modal-content-form__label">Ім'я</label>
+                                <input id="input-name" autocomplete="off" type="text" class="modal-content-form__input modal-content-form__input-name">
+                            </div>
+                            <div class="modal-content-form__items">
+                                <label for="input-tel" class="modal-content-form__label">Телефон</label>
+                                <input id="input-tel" autocomplete="off" type="text" class="modal-content-form__input modal-content-form__input-tel">
+                            </div>
+                            <div class="modal-content-form__items">
+                                <label for="input-mail" class="modal-content-form__label">Пошта</label>
+                                <input id="input-mail" autocomplete="off" type="text" class="modal-content-form__input modal-content-form__input-mail">
+                            </div>
+                            <div class="modal-content-form__items modal-content-form__comment-body">
+                                <label for="input-comment" class="modal-content-form__label">Коментар</label>
+                                <textarea id="input-comment" autocomplete="off" type="text" class="modal-content-form__comment" placeholder="Введіть текст"></textarea>
+                            </div>
+                            <div class="modal-content-form__items modal-content-form__check">
+                                <input id="input-check" autocomplete="off" type="checkbox" class="modal-content-form__check">
+                                <label for="input-check" class="modal-content-form__label-check">Погоджуюся з розсилкою та приймаю <a href="#">Умови договору</a></label>
+                            </div>
+                        </form>
+                        <buttton type="submit" class="widow-modal__buttton">Відправити</buttton>
+                    </div>
+                </div>
+            </section>
+            <section class="section-title">
+            <div class="section-title__container">
+                <div class="section-title__content">
+                    <h1 class="section-title__title">Ефективні рішення для вашого бізнесу</h1>
+                    <button class="section-title__buttont button-favour" type="button">Замовити послугу</button>
+                </div>
+            </div>
+            </section>
+            <section class="section-ourfeatures ourfeatures-section">
+            <div class="ourfeatures-section__container">
+                <h2 class="ourfeatures-section__title visually-hidden subtitle">Наші особливості</h2>
+                <div class="ourfeatures-section__list ourfeatures-list">
+                    <ul class="ourfeature-list__items">
+                        <li class="ourfeature-list__item">
+                            <div class="ourfeature-list-item__body">
+                                <div class="ourfeature-list-item__img">
+                                    <img src="images/our__featured/1.png" alt="Обсерваторія">
+                                </div>
+                                <h3 class="ourfeature-list-item__title">УВАГА ДО ДЕТАЛЕЙ</h3>
+                                <p class="ourfeature-list-item__description">
+                                    Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="ourfeature-list__item">
+                            <div class="ourfeature-list-item__body">
+                                <div class="ourfeature-list-item__img">
+                                    <img src="images/our__featured/2.png" alt="Годинник">
+                                </div>
+                                <h3 class="ourfeature-list-item__title">ПУНКТУАЛЬНІСТЬ</h3>
+                                <p class="ourfeature-list-item__description">
+                                    Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="ourfeature-list__item">
+                            <div class="ourfeature-list-item__body">
+                                <div class="ourfeature-list-item__img">
+                                    <img src="images/our__featured/3.png" alt="Діаграма">
+                                </div>
+                                <h3 class="ourfeature-list-item__title">ПЛАНУВАННЯ</h3>
+                                <p class="ourfeature-list-item__description">
+                                    Так само консультація з широким активом значною мірою зумовлює.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="ourfeature-list__item">
+                            <div class="ourfeature-list-item__body">
+                                <div class="ourfeature-list-item__img">
+                                    <img src="images/our__featured/4.png" alt="Космонавт">
+                                </div>
+                                <h3 class="ourfeature-list-item__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+                                <p class="ourfeature-list-item__description">
+                                    Значимість цих проблем настільки очевидна, що реалізація планових завдань.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+            </div>  
+            </section>
+            <section class="section-whatwedo whatwedo-section">
+            <div class="whatwedo-section__container">
+                <h2 class="whatwedo-section__title subtitle">Чим ми займаємося</h2>
+                <ul class="whatwedo-section__items">
+                    <li class="section-whatwedo-item">
+                        <div class="section-whatwedo-item__body">
+                            <img src="./images/what__we__do/whatdo1.jpg" alt="проводимо розрахунки" width="370"height="294">
+                            <h3 class="section-whatwedo-item__title">Десктопні додатки</h3>
+                        </div>
+                    </li>
+                    <li class="section-whatwedo-item">
+                        <div class="section-whatwedo-item__body">
+                            <img src="./images/what__we__do/whatdo2.jpg" alt="ноутбук з даними" width="370" height="294">
+                            <h3 class="section-whatwedo-item__title">Мобільні додатки</h3>
+                        </div>    
+                    </li>
+                    <li class="section-whatwedo-item">
+                        <div class="section-whatwedo-item__body">
+                            <img src="./images/what__we__do/whatdo3.jpg" alt="планшет з малюнком" width="370" height="294">
+                            <h3 class="section-whatwedo-item__title section-whatwedo-item__title-3">Дизайнерські рішення</h3>
+                        </div>
+                    </li>
+                </ul>    
+            </div>
+            </section>
+            <section class="section-ourteam ourteam-section">
+            <div class="ourteam-section__container">
+                <h2 class="ourteam-section__title subtitle">Наша команда</h2>
+                <ul class="ourteam-section__items ourteam-items">
+                    <li class="ourteam-items__item ourteam-items-item">
+                        <picture>
+                            <source srcset="./images/our__team/igord__768.jpg" width="354" height="374" media="(max-width: 1200px)">
+                            <img src="./images/our__team/igord.jpg" width="270" height="260">
+                        </picture>
+                        <h3 class="ourteam-items-item__name">Ігор Дем'яненко</h3>
+                        <p class="ourteam-items-item__position">Product Designer</p>
+                        <div class="ourteam-items-item__social ourteam-item-social">
+                            <a href="#" class="ourteam-item-social__links-1 ourteam-item-social__links"></a>
+                            <a href="#" class="ourteam-item-social__links-2 ourteam-item-social__links"></a>
+                            <a href="#" class="ourteam-item-social__links-3 ourteam-item-social__links"></a>
+                            <a href="#" class="ourteam-item-social__links-4 ourteam-item-social__links"></a>
+                        </div>
+                    </li>
+                    <li class="ourteam-items__item">
+                        <picture>
+                            <source srcset="./images/our__team/olhar__768.jpg" width="354" height="374" media="(max-width: 1200px)">
+                            <img src="./images/our__team/olhar.jpg" width = "270" height = "260">
+                        </picture>
+                        <h3 class="ourteam-items-item__name">Ольга Рєпіна</h3>
+                        <p class="ourteam-items-item__position">Frontend Developer</p>
+                            <div class="ourteam-items-item__social ourteam-item-social">
+                            <a href="#" class="ourteam-item-social__links-1 ourteam-item-social__links"></a>
+                            <a href="#" class="ourteam-item-social__links-2 ourteam-item-social__links"></a>
+                            <a href="#" class="ourteam-item-social__links-3 ourteam-item-social__links"></a>
+                            <a href="#" class="ourteam-item-social__links-4 ourteam-item-social__links"></a>
+                        </div>
+                    </li>
+                    <li class="ourteam-items__item">
+                        <picture>
+                            <source srcset="./images/our__team/mykola__768.jpg" width="354" height="374" media="(max-width: 1200px)">
+                            <img src="./images/our__team/mykola.jpg" width="270" height="260">
+                        </picture>
+                        <h3 class="ourteam-items-item__name">Микола Тарасов</h3>
+                        <p class="ourteam-items-item__position">Marketing</p>
+                            <div class="ourteam-items-item__social ourteam-item-social">
+                            <a href="#" class="ourteam-item-social__links-1 ourteam-item-social__links"></a>
+                            <a href="#" class="ourteam-item-social__links-2 ourteam-item-social__links"></a>
+                            <a href="#" class="ourteam-item-social__links-3 ourteam-item-social__links"></a>
+                            <a href="#" class="ourteam-item-social__links-4 ourteam-item-social__links"></a>
+                        </div>
+                    </li>
+                    <li class="ourteam-items__item">
+                        <picture>
+                            <source srcset="./images//our__team/myhaylo__768.jpg" width="354" height="374" media="(max-width: 1200px)">
+                            <img src="./images//our__team/myhaylo.jpg" width="270" height="260">
+                        </picture>
+                        <h3 class="ourteam-items-item__name">Михайло Єрмаков</h3>
+                        <p class="ourteam-items-item__position">UI Designer</p>
+                            <div class="ourteam-items-item__social ourteam-item-social">
+                            <a href="#" class="ourteam-item-social__links-1 ourteam-item-social__links"></a>
+                            <a href="#" class="ourteam-item-social__links-2 ourteam-item-social__links"></a>
+                            <a href="#" class="ourteam-item-social__links-3 ourteam-item-social__links"></a>
+                            <a href="#" class="ourteam-item-social__links-4 ourteam-item-social__links"></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            </section>
+            <section class="section-clients clients-section">
+            <div class="clients-section__container clients-content">
+                <div class="clients-content__body">
+                    <h2 class="clients-content__title">Постійні клієнти</h2>
+                    <div class="clients-content__list">
+                        <a href="#" class="clients-content__links clients-content__link-1"></a>
+                        <a href="#" class="clients-content__links clients-content__link-2"></a>
+                        <a href="#" class="clients-content__links clients-content__link-3"></a>
+                        <a href="#" class="clients-content__links clients-content__link-4"></a>
+                        <a href="#" class="clients-content__links clients-content__link-5"></a>
+                        <a href="#" class="clients-content__links clients-content__link-6"></a>
+                    </div>
+                </div>
+            </div>
+            </section>
+        </main> 
+        <footer>
+            <div class="footer__container">
+                <div class="footer__content content-footer">
+                    <div class="content-footer-body">
+                        <div class="content-footer__item-nav">
+                            <a class="content-footer__logo" href="#">Web<span>Studio</span></a>
+                            <address class="content-footer__address">
+                                <ul class="content-footer-address__items">
+                                    <li class="content-footer-address__item"><a class="content-footer-address-item__map"
+                                            href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank" rel="noopener noreferrer">м. Київ, пр-т
+                                            Лесі Українки, 26</a></li>
+                                    <li class="content-footer-address__item"><a class="content-footer-address-item__contacts"
+                                            href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                                    <li class="content-footer-address__item"><a class="content-footer-address-item__contacts"
+                                            href="tel:+380961111111">+380961111111</a></li>
+                                </ul>
+                            </address>
+                        </div>
+                        <div class="content-footer__item-social footer-item-social">
+                            <h4 class="footer-item-social__title">приєднуйтесь</h4>
+                            <div class="footer-item-social__items">
+                                <a href="#" class="footer-item-social__links footer-item-social__link-1"></a>
+                                <a href="#" class="footer-item-social__links footer-item-social__link-2"></a>
+                                <a href="#" class="footer-item-social__links footer-item-social__link-3"></a>
+                                <a href="#" class="footer-item-social__links footer-item-social__link-4"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-footer__item-form footer-item-form">
+                        <h4 class="footer-item-form__title">Підпишіться на розсилку</h4>
+                        <div class="footer-item-form__send-block">
+                            <input type="text" autocomplete="off" class="footer-item-form__input" placeholder="E-mail">
+                            <a href="#" class="footer-item-form__link">Підписатися</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/modal-window.js"></script>
+    <script src="js/header-modal.js"></script>
+</body>
+</html>
